@@ -1,0 +1,246 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f8f6f2;
+}
+
+header{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+padding:25px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+color:white;
+font-size:32px;
+font-family:'Playfair Display',serif;
+font-weight:bold;
+}
+
+nav{
+display:flex;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#d8c39b;
+}
+
+.btn-header{
+background:#d8c39b;
+padding:14px 28px;
+border-radius:50px;
+text-decoration:none;
+color:#000;
+font-weight:600;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(15,25,20,.55),rgba(15,25,20,.55)),
+url("https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1920");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero-content{
+max-width:900px;
+color:white;
+}
+
+.hero span{
+color:#d8c39b;
+letter-spacing:4px;
+}
+
+.hero h1{
+font-size:80px;
+font-family:'Playfair Display',serif;
+line-height:90px;
+margin:20px 0;
+}
+
+.hero p{
+font-size:22px;
+}
+
+.buttons{
+margin-top:40px;
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+.btn-primary,
+.btn-secondary{
+padding:18px 35px;
+border-radius:50px;
+text-decoration:none;
+}
+
+.btn-primary{
+background:#708b64;
+color:white;
+}
+
+.btn-secondary{
+background:white;
+color:#2e4937;
+}
+
+.about,
+.services,
+.diferenciais,
+.beneficios,
+.depoimentos,
+.booking{
+padding:100px 8%;
+text-align:center;
+}
+
+h2{
+font-size:50px;
+margin-bottom:50px;
+font-family:'Playfair Display',serif;
+color:#2e4937;
+}
+
+.about{
+background:#edf3ea;
+}
+
+.about p{
+max-width:900px;
+margin:20px auto;
+line-height:32px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+max-width:1400px;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#2e4937;
+}
+
+.card p{
+line-height:28px;
+color:#666;
+}
+
+.beneficios{
+background:#edf3ea;
+}
+
+form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+input,
+select{
+padding:18px;
+border:none;
+border-radius:12px;
+background:#f1f1f1;
+}
+
+form button{
+padding:18px;
+border:none;
+border-radius:12px;
+background:#708b64;
+color:white;
+cursor:pointer;
+font-size:16px;
+}
+
+footer{
+background:#2e4937;
+color:white;
+text-align:center;
+padding:60px;
+}
+
+footer h3{
+font-size:35px;
+margin-bottom:15px;
+font-family:'Playfair Display',serif;
+}
+
+footer p{
+margin:10px 0;
+}
+
+@media(max-width:900px){
+
+header{
+flex-direction:column;
+gap:20px;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:50px;
+line-height:60px;
+}
+
+.buttons{
+flex-direction:column;
+}
+
+h2{
+font-size:38px;
+}
+}
